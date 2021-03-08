@@ -978,6 +978,8 @@ func (l *Listener) closeSession(remote net.Addr) (ret bool) {
 // Addr returns the listener's network address, The Addr returned is shared by all invocations of Addr, so do not modify it.
 func (l *Listener) Addr() net.Addr { return l.conn.LocalAddr() }
 
+func (l *Listener) GetConn() net.PacketConn { return l.conn }
+
 // Listen listens for incoming KCP packets addressed to the local address laddr on the network "udp",
 func Listen(laddr string) (net.Listener, error) { return ListenWithOptions(laddr, nil, 0, 0) }
 
