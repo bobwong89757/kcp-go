@@ -576,7 +576,7 @@ func newClosedFlagPacketConn(c net.PacketConn) *closedFlagPacketConn {
 }
 
 // Listener should close a net.PacketConn that it created.
-// https://github.com/xtaci/kcp-go/issues/165
+// https://github.com/bobwong89757/kcp-go/issues/165
 func TestListenerOwnedPacketConn(t *testing.T) {
 	// ListenWithOptions creates its own net.PacketConn.
 	l, err := ListenWithOptions("127.0.0.1:0", nil, 0, 0)
@@ -604,7 +604,7 @@ func TestListenerOwnedPacketConn(t *testing.T) {
 }
 
 // Listener should not close a net.PacketConn that it did not create.
-// https://github.com/xtaci/kcp-go/issues/165
+// https://github.com/bobwong89757/kcp-go/issues/165
 func TestListenerNonOwnedPacketConn(t *testing.T) {
 	// Create a net.PacketConn not owned by the Listener.
 	c, err := net.ListenPacket("udp", "127.0.0.1:0")
@@ -636,7 +636,7 @@ func TestListenerNonOwnedPacketConn(t *testing.T) {
 }
 
 // UDPSession should close a net.PacketConn that it created.
-// https://github.com/xtaci/kcp-go/issues/165
+// https://github.com/bobwong89757/kcp-go/issues/165
 func TestUDPSessionOwnedPacketConn(t *testing.T) {
 	l := sinkServer(0)
 	defer l.Close()
@@ -667,7 +667,7 @@ func TestUDPSessionOwnedPacketConn(t *testing.T) {
 }
 
 // UDPSession should not close a net.PacketConn that it did not create.
-// https://github.com/xtaci/kcp-go/issues/165
+// https://github.com/bobwong89757/kcp-go/issues/165
 func TestUDPSessionNonOwnedPacketConn(t *testing.T) {
 	l := sinkServer(0)
 	defer l.Close()

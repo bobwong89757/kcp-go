@@ -3,20 +3,20 @@
 
 [![GoDoc][1]][2] [![Powered][9]][10] [![MIT licensed][11]][12] [![Build Status][3]][4] [![Go Report Card][5]][6] [![Coverage Statusd][7]][8] [![Sourcegraph][13]][14]
 
-[1]: https://godoc.org/github.com/xtaci/kcp-go?status.svg
-[2]: https://pkg.go.dev/github.com/xtaci/kcp-go
+[1]: https://godoc.org/github.com/bobwong89757/kcp-go?status.svg
+[2]: https://pkg.go.dev/github.com/bobwong89757/kcp-go
 [3]: https://travis-ci.org/xtaci/kcp-go.svg?branch=master
 [4]: https://travis-ci.org/xtaci/kcp-go
-[5]: https://goreportcard.com/badge/github.com/xtaci/kcp-go
-[6]: https://goreportcard.com/report/github.com/xtaci/kcp-go
+[5]: https://goreportcard.com/badge/github.com/bobwong89757/kcp-go
+[6]: https://goreportcard.com/report/github.com/bobwong89757/kcp-go
 [7]: https://codecov.io/gh/xtaci/kcp-go/branch/master/graph/badge.svg
 [8]: https://codecov.io/gh/xtaci/kcp-go
 [9]: https://img.shields.io/badge/KCP-Powered-blue.svg
 [10]: https://github.com/skywind3000/kcp
 [11]: https://img.shields.io/badge/license-MIT-blue.svg
 [12]: LICENSE
-[13]: https://sourcegraph.com/github.com/xtaci/kcp-go/-/badge.svg
-[14]: https://sourcegraph.com/github.com/xtaci/kcp-go?badge
+[13]: https://sourcegraph.com/github.com/bobwong89757/kcp-go/-/badge.svg
+[14]: https://sourcegraph.com/github.com/bobwong89757/kcp-go?badge
 
 ## Introduction
 
@@ -24,7 +24,7 @@
 
 This library intents to provide a **smooth, resilient, ordered, error-checked and anonymous** delivery of streams over **UDP** packets, it has been battle-tested with opensource project [kcptun](https://github.com/xtaci/kcptun). Millions of devices(from low-end MIPS routers to high-end servers) have deployed **kcp-go** powered program in a variety of forms like **online games, live broadcasting, file synchronization and network acceleration**.
 
-[Lastest Release](https://github.com/xtaci/kcp-go/releases)
+[Lastest Release](https://github.com/bobwong89757/kcp-go/releases)
 
 ## Features
 
@@ -40,7 +40,7 @@ This library intents to provide a **smooth, resilient, ordered, error-checked an
 
 ## Documentation
 
-For complete documentation, see the associated [Godoc](https://godoc.org/github.com/xtaci/kcp-go).
+For complete documentation, see the associated [Godoc](https://godoc.org/github.com/bobwong89757/kcp-go).
 
 ## Specification
 
@@ -88,7 +88,7 @@ SIZE:
 
 ## Examples
 
-1. [simple examples](https://github.com/xtaci/kcp-go/tree/master/examples)
+1. [simple examples](https://github.com/bobwong89757/kcp-go/tree/master/examples)
 2. [kcptun client](https://github.com/xtaci/kcptun/blob/master/client/main.go)
 3. [kcptun server](https://github.com/xtaci/kcptun/blob/master/server/main.go)
 
@@ -110,7 +110,7 @@ $ go test -v -run=^$ -bench .
 beginning tests, encryption:salsa20, fec:10/3
 goos: darwin
 goarch: amd64
-pkg: github.com/xtaci/kcp-go
+pkg: github.com/bobwong89757/kcp-go
 BenchmarkSM4-4                 	   50000	     32180 ns/op	  93.23 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAES128-4              	  500000	      3285 ns/op	 913.21 MB/s	       0 B/op	       0 allocs/op
 BenchmarkAES192-4              	  300000	      3623 ns/op	 827.85 MB/s	       0 B/op	       0 allocs/op
@@ -142,7 +142,7 @@ BenchmarkSinkSpeed64K-4        	    5000	    329065 ns/op	 199.16 MB/s	   21529 
 BenchmarkSinkSpeed256K-4       	     500	   2373354 ns/op	 220.91 MB/s	  166332 B/op	    3554 allocs/op
 BenchmarkSinkSpeed1M-4         	     300	   5117927 ns/op	 204.88 MB/s	  310378 B/op	    6988 allocs/op
 PASS
-ok  	github.com/xtaci/kcp-go	50.349s
+ok  	github.com/bobwong89757/kcp-go	50.349s
 ```
 
 ```
@@ -163,7 +163,7 @@ CPU revision	: 3
 2020/01/05 19:25:13 beginning tests, encryption:salsa20, fec:10/3
 goos: linux
 goarch: arm
-pkg: github.com/xtaci/kcp-go/v5
+pkg: github.com/bobwong89757/kcp-go/v5
 BenchmarkSM4-4                     20000             86475 ns/op          34.69 MB/s           0 B/op          0 allocs/op
 BenchmarkAES128-4                  20000             62254 ns/op          48.19 MB/s           0 B/op          0 allocs/op
 BenchmarkAES192-4                  20000             71802 ns/op          41.78 MB/s           0 B/op          0 allocs/op
@@ -195,7 +195,7 @@ BenchmarkSinkSpeed64K-4             1000           1587906 ns/op          41.27 
 BenchmarkSinkSpeed256K-4             100          16277830 ns/op          32.21 MB/s      453027 B/op       9296 allocs/op
 BenchmarkSinkSpeed1M-4               100          31040703 ns/op          33.78 MB/s      898097 B/op      18932 allocs/op
 PASS
-ok      github.com/xtaci/kcp-go/v5      64.151s
+ok      github.com/bobwong89757/kcp-go/v5      64.151s
 ```
 
 

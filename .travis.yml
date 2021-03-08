@@ -15,7 +15,7 @@ before_install:
     - go get -t -v ./...
 
 install:
-    - go get github.com/xtaci/kcp-go
+    - go get github.com/bobwong89757/kcp-go
 
 script:
     - go test -coverprofile=coverage.txt -covermode=atomic -bench . -timeout 10m
