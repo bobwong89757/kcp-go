@@ -579,6 +579,10 @@ func (s *UDPSession) output(buf []byte) {
 	}
 }
 
+func (s *UDPSession) GetConn() net.PacketConn {
+	return s.conn
+}
+
 // sess update to trigger protocol
 func (s *UDPSession) update() {
 	select {
